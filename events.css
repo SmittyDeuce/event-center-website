@@ -141,3 +141,25 @@ img {
 .event-content a:hover {
     color: aqua;
 }
+
+@media (max-width: 768px)  {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .event-content {
+        width: 90%;
+        margin: 10% auto;
+    }
+}
