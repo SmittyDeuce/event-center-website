@@ -3,14 +3,14 @@ body {
     color: #ADD8E6;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;  
+    min-height: 100vh;
     margin: 0;
+    box-sizing: border-box; /* Ensures border is included in width/height */
 }
-
 
 header {
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
     align-items: stretch;
     justify-content: flex-start;
     height: 300px;
@@ -19,13 +19,11 @@ header {
     text-shadow: 3px 3px 5px rgb(255, 15, 15);
 }
 
-
 header img {
     width: 200px;
     height: 100%;
-    object-fit: fill;  
+    object-fit: fill;
 }
-
 
 div.text {
     display: flex;
@@ -33,9 +31,8 @@ div.text {
     justify-content: center;
     align-items: center;
     height: 100%;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
-
 
 h1 {
     font-size: 80px;
@@ -48,7 +45,6 @@ header h2 {
     font-style: italic;
     margin: 0;
 }
-
 
 nav {
     display: flex;
@@ -83,7 +79,6 @@ nav a:hover {
     color: #0073e6;
 }
 
-
 .event-title {
     text-align: center;
     font-size: 30px;
@@ -91,44 +86,33 @@ nav a:hover {
     flex-grow: 1;
 }
 
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 50px;
-    width: 100%;
-    margin-top: auto;
-    text-shadow: 3px 3px 5px rgb(255, 15, 15);
-
-}
-
-
 main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 2px solid;
+    padding: 10px;
+    border: 2px solid #333; /* Slightly darker border */
+    box-sizing: border-box; /* Prevents border from affecting layout size */
 }
 
 h2 {
     text-align: center;
     font-size: 30px;
     text-shadow: 3px 3px 5px rgb(255, 15, 15);
-
 }
 
 .event-content {
     border: solid black 6px;
     padding: 20px;
     font-size: 33px;
+    margin: 10px; /* Adds spacing between event content */
+    box-sizing: border-box; /* Ensures padding/borders don't affect layout */
 }
 
 .event-content img {
     display: block;
     margin: 0 auto;
-  }
+}
 
 img {
     width: 400px;
@@ -142,7 +126,7 @@ img {
     color: aqua;
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         height: auto;
