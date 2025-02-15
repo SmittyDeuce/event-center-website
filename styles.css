@@ -1,0 +1,104 @@
+/* Make the body take at least 100vh (full viewport height) */
+body {
+    background-color: #5e5e5e;
+    color: #ADD8E6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensure the body takes up at least the full height */
+    margin: 0;
+}
+
+/* Ensure header takes full width and has a fixed height */
+header {
+    display: flex;
+    flex-direction: row;  /* Stack logo and content horizontally */
+    align-items: stretch;  /* Stretch all content vertically */
+    justify-content: flex-start;  /* Align items to the left */
+    height: 300px;
+    border: 4px solid black;
+    width: 100%;
+}
+
+/* Make the logo stretch to fill height */
+header img {
+    width: 200px;  /* Fixed width for the logo */
+    height: 100%;  /* Stretch image vertically */
+    object-fit: fill;  /* Stretch the image to fill the container */
+}
+
+/* Center the text vertically and horizontally in the header */
+div.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;  /* Take up remaining space to the right of the logo */
+}
+
+/* Styling for h1 and h2 */
+h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Ensure navigation takes space at the bottom and stretches to the right */
+nav {
+    display: flex;
+    align-items: flex-end;  /* Align items to the bottom */
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;  /* Take remaining space to the right of the logo */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+nav li {
+    flex: 1;  /* Each list item takes up equal space */
+    text-align: center;
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ADD8E6;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    color: #0073e6;
+}
+
+/* About us section, main content */
+.about-us {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    flex-grow: 1;  /* Ensures it takes up available space */
+}
+
+/* Footer should stay at the bottom */
+footer {
+    display: flex;
+    justify-content: center;  /* Center the text horizontally */
+    align-items: center;  /* Center vertically */
+
+    text-align: center;
+    height: 50px;  /* Adjust the height */
+    width: 100%;
+    margin-top: auto;  /* Push footer to the bottom */
+}

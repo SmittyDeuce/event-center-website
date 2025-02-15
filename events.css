@@ -1,0 +1,143 @@
+body {
+    background-color: #5e5e5e;
+    color: #ADD8E6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;  
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 300px;
+    border: 4px solid black;
+    width: 100%;
+    text-shadow: 3px 3px 5px rgb(255, 15, 15);
+}
+
+
+header img {
+    width: 200px;
+    height: 100%;
+    object-fit: fill;  
+}
+
+
+div.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1; 
+}
+
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ADD8E6;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    color: #0073e6;
+}
+
+
+.event-title {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin-top: auto;
+    text-shadow: 3px 3px 5px rgb(255, 15, 15);
+
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 3px 3px 5px rgb(255, 15, 15);
+
+}
+
+.event-content {
+    border: solid black 6px;
+    padding: 20px;
+    font-size: 33px;
+}
+
+.event-content img {
+    display: block;
+    margin: 0 auto;
+  }
+
+img {
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.event-content a:hover {
+    color: aqua;
+}
